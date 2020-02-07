@@ -1,10 +1,4 @@
-import {
-  ADD_CONTACT,
-  DELETE_CONTACT,
-  EDIT_CONTACT,
-  GET_CONTACTS,
-  CONTACTS_LOADING,
-} from '../actions/types';
+import { DELETE_CONTACT, GET_CONTACTS, CONTACTS_LOADING } from '../actions/types';
 let initialState = {
   contacts: [],
   loading: false,
@@ -19,15 +13,6 @@ export const contactReducer = (state = initialState, action) => {
         ...state,
         contacts: state.contacts.filter(contact => contact._id !== action.payload),
       };
-    case ADD_CONTACT:
-      return { ...state, contacts: [action.payload, ...state.contacts], loading: false };
-    case EDIT_CONTACT:
-      state.contacts.map(contact =>
-        contact._id === action.payload.id
-          ? ({ ...contact } = { ...action.payload.contact })
-          : contact
-      );
-      return { ...state, loading: false };
     case CONTACTS_LOADING:
       return {
         ...state,

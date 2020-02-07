@@ -1,10 +1,4 @@
-import {
-  ADD_CONTACT,
-  DELETE_CONTACT,
-  EDIT_CONTACT,
-  GET_CONTACTS,
-  CONTACTS_LOADING,
-} from './types';
+import { DELETE_CONTACT, GET_CONTACTS, CONTACTS_LOADING } from './types';
 import axios from 'axios';
 
 export const getContacts = () => dispatch => {
