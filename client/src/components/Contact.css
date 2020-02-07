@@ -1,27 +1,10 @@
-.card {
-  border: 1px solid lightblue;
-  box-sizing: border-box;
-  /* padding-top: 20px; */
-  height: 200px;
-  width: 250px;
-  /* border: 1px solid red; */
-  margin-left: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.card button {
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  background-color: #000428;
-  width: 90px;
-}
-.card button:hover {
-  background-color: #004e92;
-  cursor: pointer;
-}
 .value {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
+  color: #40a9ff;
+}
+
+.title {
+  text-align: left;
+  color: #8f8f8f;
 }

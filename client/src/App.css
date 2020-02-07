@@ -4,7 +4,24 @@
 .App h1 {
   color: #000428;
 }
-.App button {
+.m-right {
+  margin-right: 20px;
+}
+.m-top {
+  margin-top: 20px;
+}
+.m-auto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+.m-bottom {
+  margin-bottom: 20px;
+}
+/* .App button {
   color: white;
   padding: 10px 20px;
   border: none;
@@ -15,4 +32,4 @@
 .App button:hover {
   background-color: #000428;
   cursor: pointer;
-}
+} */

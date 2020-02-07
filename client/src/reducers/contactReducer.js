@@ -18,7 +18,6 @@ export const contactReducer = (state = initialState, action) => {
       return {
         ...state,
         contacts: state.contacts.filter(contact => contact._id !== action.payload),
-        loading: false,
       };
     case ADD_CONTACT:
       return { ...state, contacts: [action.payload, ...state.contacts], loading: false };

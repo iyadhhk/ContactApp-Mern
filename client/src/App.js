@@ -6,16 +6,20 @@ import ContactList from './components/ContactList';
 import AddContact from './components/AddContact';
 import EditContact from './components/EditContact';
 import { Switch, Redirect, Route, Link } from 'react-router-dom';
+import { Typography, Button } from 'antd';
+const { Title } = Typography;
 
 function App(props) {
   return (
     <div className='App'>
-      <h1>Contact App</h1>
+      <Title type='secondary'>Contact App</Title>
       <Link to={'/contacts'}>
-        <button onClick={() => props.getContacts()}>Contact List</button>
+        <Button className='m-right' onClick={() => props.getContacts()} type='primary'>
+          Contact List
+        </Button>
       </Link>
       <Link to={'/add_contact'}>
-        <button>Add Contact</button>
+        <Button>Add Contact</Button>
       </Link>
       <Switch>
         <Redirect exact from='/' to='/contacts' />

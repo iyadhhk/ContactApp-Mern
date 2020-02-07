@@ -3,12 +3,19 @@ import './ContactList.css';
 import Contact from './Contact';
 import { connect } from 'react-redux';
 import { getContacts } from '../actions/contactActions';
+import { Spin } from 'antd';
+
 class ContactList extends Component {
   // componentDidMount() {
   //   if (!this.props.loading) this.props.getContacts();
   // }
   render() {
-    if (this.props.loading) return <h1>Loading...</h1>;
+    if (this.props.loading)
+      return (
+        <div className='spinner'>
+          <Spin size='large' tip='Loading...' />
+        </div>
+      );
     else {
       return (
         <div className='list'>

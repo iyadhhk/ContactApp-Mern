@@ -43,14 +43,6 @@ router.put('/:id', (req, res) => {
       },
     }
   )
-    // Contact.findById(req.params.id)
-    //   .then(contact => {
-    //     contact.name = req.body.name;
-    //     contact.tel = req.body.tel;
-    //     contact.email = req.body.email;
-    //     contact.updateOne(
-
-    //     )
     .then(() => res.json({ success: true }))
     .catch(err => res.status(404).json({ success: false }));
 });

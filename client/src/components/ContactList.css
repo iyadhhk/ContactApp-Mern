@@ -1,4 +1,8 @@
 .list {
+  padding: 20px 40px;
   display: flex;
   flex-wrap: wrap;
+}
+.spinner {
+  margin-top: 40px;
 }
